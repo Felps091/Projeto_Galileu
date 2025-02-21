@@ -1,0 +1,556 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ESTILIZAÇÕES GERAIS */
+body{
+    background-color: #1b1b1b;
+    color: #f5f4f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ESTILIZAÇÕES GERAIS - BOTÃO SAIBA MAIS */
+.btn-saiba-mais{
+    background-color: aquamarine;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 200px;
+}
+
+/* ESTILIZAÇÕES GERAIS - EFEITO BOTÃO SAIBA MAIS */
+.btn-saiba-mais:hover{
+    background-color: #a1a1a1;
+    color: #1a1a1a;
+    transition: 0.5s;
+}
+
+/* CABEÇALHO */
+header{
+    background-color: #a1a1a1;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 5px #1a1a1a;
+    z-index: 1000;
+}
+
+.logo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CABEÇALHO - IMAGEM */
+.logo-header img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* CABEÇALHO - TÍTULO PRINCIPAL */
+.titulo-header h1{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* CABEÇALHO - TÍTULO SECUNDÁROI */
+.titulo-header h2{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* MENU DE NAVEGAÇÃO - LISTA NÃO ORDENADA */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+/* MENU DE NAVEGAÇÃO - LINKS */
+nav a{
+    color: #1a1a1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 4px;
+}
+
+/* MENU DE NAVEGAÇÃO - EFEITO DOS LINKS */
+nav a:hover{
+    background-color: #1a1a1a;
+    color: #a1a1a1;
+    transition: 0.5s ease-in;
+}
+
+/* MENU DE NAVEGAÇÃO - LINK ATIVO */
+nav .active{
+    background-color: #1a1a1a;
+    color: #a1a1a1;
+}
+
+/* MENU DE NAVEGAÇÃO PARA CELULAR E TABLET */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #1a1a1a;
+}
+
+/* SLIDESHOW */
+.slideshow-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SLIDESHOW - ITEM */
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+/* SLIDESHOW - ITEM JAVASCRIPT */
+.slide.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* SLIDESHOW - IMAGEM */
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(40%);
+}
+
+/* SLIDESHOW - ELEMENTO DE CONTEÚDO */
+.slide-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+/* SLIDESHOW - TÍTULO */
+.slide-content h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+ 
+/* SLIDESHOW - PARAGRÁFO */
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOTÕES DE NAVEGAÇÃO DO SLIDESHOW */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 23px;
+    z-index: 10;
+}
+
+/* BOTÃO DE NAVEGAÇÃO ESQUERDO */
+.nav-btn.left {
+    left: 10px;
+}
+
+/* BOTÃO DE NAVEGAÇÃO DIREITO */
+.nav-btn.right {
+    right: 10px;
+}
+
+
+/* CARTÕES DOS DESTINOS */
+.card-turismo{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* IMAGEM DOS CARTÕES DOS DESTINOS */
+.card-turismo .card-image img{
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* TÍTULO DOS CARTÕES DOS DESTINOS */
+.detalhes .titulo h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* CONTEÚDO DOS CARTÕES DOS DESTINOS */
+.detalhes .conteudo p{
+    text-indent: 50px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #a1a1a1;
+    color: #1a1a1a;
+    padding: 40px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* COLUNAS - RODAPÉ */
+.footer-column:first-child {
+    flex: 2;
+    padding-bottom: 20px;
+}
+
+.footer-column:not(:first-child) {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+/* TÍTULO DAS COLUNAS - RODAPÉ */
+.footer-column h4{
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+
+/* LISTA DAS COLUNAS - RODAPÉ */
+.footer-column ul{
+    list-style: none;
+}
+
+/* ITEM DA LISTA E PARÁGRADO DAS COLUNAS - RODAPÉ */
+.footer-column li, p{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* ÍCONE DA COLUNA - RODAPÉ */
+.footer-column i{
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+/* PARAGRÁFO DA COLUNA - RODAPÉ */
+.footer-column p{
+    text-align: justify;
+}
+
+/* LINK DA COLUNA - RODAPÉ */
+.footer-column a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+/* EFEITO DO LINK DA COLUNA - RODAPÉ */
+.footer-column a:hover{
+    text-decoration: underline;
+}
+
+/* ÍCONE DO CONTATO */
+.icon-contato{
+    font-size: 15px !important;
+}
+
+/* COPYRIGHT */
+.copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+}
+
+/* COPYRIGHT - LISTA */
+.copy ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* COPYRIGHT - LINKS */
+.copy a{
+    background-color: #1a1a1a;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px
+}
+
+/* COPYRIGHT - EFEITO DO LINK */
+.copy a:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* COPYRIGHT - ÍCONE */
+.copy i{
+    color: #a1a1a1;
+}
+
+/* ESTILIZAÇÕES GERAIS - TÍTULO DAS PÁGINAS */
+.titulo-sessao{
+    height: 300px;
+    position: relative;
+}
+
+
+/* ESTILIZAÇÕES GERAIS - IMAGEM DAS PÁGINAS */
+.titulo-sessao img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(30%);
+}
+
+/* ESTILIZAÇÃO GERAIS - DIV DE CONTEÚDO */
+.conteudo-sessao{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ESTILIZAÇÕES GERAIS - TÍTULO PRINCIPAIS DAS PÁGINAS */
+.conteudo-sessao h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* ESTILIZAÇÕES GERAIS - BREADCRUMBS DAS PÁGINAS */
+.conteudo-sessao p{
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* SESSÃO LUGARES */
+.lugares, .destinos, .info, .contato{
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.lugares.show, .destinos.show, .info.show, .contato.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SESSÃO LUGARES - TÍTULO */
+.lugares h1{
+    margin-bottom: 40px;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - LINHAS */
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - ITENS */
+.item {
+    text-align: center;
+    position: relative;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - ITENS IMAGEM */
+.item img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - CONTEÚDO */
+.item-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    border-radius: 5px;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - EFEITO DO CONTEÚDO */
+.item:hover .item-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* GALERIA DE IMAGENS - LUGARES - TÍTULO DO CONTEÚDO  */
+.item-content h2{
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* INFORMAÇÕES */
+/* TÍTULO */
+.info h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* SUBTÍTULO */
+.info h2{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* PARÁGRAFO */
+.info p{
+    text-indent: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* LISTA */
+.info ul li{
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.info ul li:last-child{
+    margin-bottom: 20px;
+}
+
+/* BANNER */
+.banner{
+    height: 300px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* BANNER - IMAGEM */
+.banner img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(30%);
+}
+
+/* BANNER - CONTEÚDO */
+.conteudo-banner{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* BANNER - TÍTULO */
+.conteudo-banner h1{
+    text-align: center;
+    text-transform: inherit;
+}
+
+/* BANNER - PARÁGRAFO */
+.conteudo-banner p{
+    text-align: center;
+}
+
+/* CONTATO - INFO */
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.contato-item{
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contato-item i{
+    color:#1a1a1a;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* MAPA */
+.mapa iframe{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+

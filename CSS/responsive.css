@@ -1,0 +1,338 @@
+/* CELULAR */
+@media (max-width: 480px) {
+
+    /* CABEÇALHO */
+    .logo-header {
+        padding: 10px 0px;
+    }
+
+    /* CABEÇALHO - TÍTULO PRINCIPAL */
+    .titulo-header h1 {
+        font-size: 17px;
+    }
+
+    /* CABEÇALHO - TÍTULO SECUNDÁRIO */
+    .titulo-header h2 {
+        font-size: 15px;
+    }
+
+    /* ÍCONE DO MENU DE NAVEGAÇÃO */
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        background-color: #1b1b1b;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* MENU DE NAVEGAÇÃO */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        z-index: 1000;
+    }
+
+    /* MENU DE NAVEGAÇÃO ATIVO - JAVASCRIPT */
+    nav ul.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* LINKS DO MENU DE NAVEGAÇÃO */
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /* EFEITO DOS LINKS DO MENU DE NAVEGAÇÃO */
+    nav a:hover {
+        background-color: #555;
+        transition: 0.5s ease-in;
+    }
+
+    /* CARTÕES DOS DESTINOS */
+    .card-turismo {
+        display: block;
+    }
+
+    /* IMAGEM DOS CARTÕES DOS DESTINOS */
+    .card-image img {
+        width: 100% !important;
+    }
+
+    /* TÍTULO DOS CARTÕES DOS DESTINOS */
+    .card-turismo h1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    /* PARAGRÁFO DOS CARTÕES DOS DESTINOS */
+    .card-turismo p {
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    /* BOTÃO SAIBA MAIS */
+    .btn-saiba-mais {
+        width: 100%;
+        text-align: center;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    /* RODAPÉ */
+    .footer-container {
+        display: inline;
+    }
+
+    /* COPYRIGHT */
+    .copy {
+        display: block;
+        text-align: center;
+    }
+
+    /* COPYRIGHT - LISTA DE REDES SOCIAIS */
+    .copy ul {
+        justify-content: center;
+    }
+
+    /* LUGARES - LINHAS */
+    .row {
+        display: block;
+    }
+
+    /* LUGARES - ITENS */
+    .item {
+        margin-bottom: 20px;
+    }
+
+    /* LUGARES - IMAGENS DOS ITENS */
+    .row img {
+        width: 100% !important;
+    }
+
+    /* LUGARES - CONTEÚDO */
+    .item-content {
+        width: 100%;
+    }
+
+    /* LUGARES - CONTEÚDO BOTÃO */
+    .item-content .btn-saiba-mais {
+        width: auto;
+    }
+
+    
+
+    /* BANNER - TÍTULO */
+    .banner h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    /* BANNER - PARÁGRAFO */
+    .banner p {
+        font-size: 15px;
+    }
+
+    /* CONTATO INFO */
+    .contato-info{
+        display: block;
+    }
+
+    .contato-item{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/* TABLET */
+@media (min-width: 480px) and (max-width: 1024px) {
+
+    /* CABEÇALHO */
+    .logo-header {
+        padding: 10px 0px;
+    }
+
+    /* CABEÇALHO - TÍTULO PRINCIPAL */
+    .titulo-header h1 {
+        font-size: 17px;
+    }
+
+    /* CABEÇALHO - TÍTULO SECUNDÁRIO */
+    .titulo-header h2 {
+        font-size: 15px;
+    }
+
+    /* ÍCONE DO MENU DE NAVEGAÇÃO */
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        background-color: #1b1b1b;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* MENU DE NAVEGAÇÃO */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        z-index: 1000;
+    }
+
+    /* MENU DE NAVEGAÇÃO ATIVO - JAVASCRIPT */
+    nav ul.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* LINKS DO MENU DE NAVEGAÇÃO */
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /* EFEITO DOS LINKS DO MENU DE NAVEGAÇÃO */
+    nav a:hover {
+        background-color: #555;
+        transition: 0.5s ease-in;
+    }
+
+    /* CARTÕES DOS DESTINOS */
+    .card-turismo {
+        display: block;
+    }
+
+    /* IMAGEM DOS CARTÕES DOS DESTINOS */
+    .card-image img {
+        width: 100% !important;
+    }
+
+    /* TÍTULO DOS CARTÕES DOS DESTINOS */
+    .card-turismo h1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    /* PARAGRÁFO DOS CARTÕES DOS DESTINOS */
+    .card-turismo p {
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    /* BOTÃO SAIBA MAIS */
+    .btn-saiba-mais {
+        width: 100%;
+        text-align: center;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    /* RODAPÉ */
+    .footer-container {
+        display: inline;
+    }
+
+    /* COPYRIGHT */
+    .copy {
+        display: block;
+        text-align: center;
+    }
+
+    /* COPYRIGHT - LISTA DE REDES SOCIAIS */
+    .copy ul {
+        justify-content: center;
+    }
+
+    /* LUGARES - LINHAS */
+    .row {
+        display: block;
+    }
+
+    /* LUGARES - ITENS */
+    .item {
+        margin-bottom: 20px;
+    }
+
+    /* LUGARES - IMAGENS DOS ITENS */
+    .row img {
+        width: 100% !important;
+    }
+
+    /* LUGARES - CONTEÚDO */
+    .item-content {
+        width: 100%;
+    }
+
+    /* LUGARES - CONTEÚDO BOTÃO */
+    .item-content .btn-saiba-mais {
+        width: auto;
+    }
+
+    /* BANNER - TÍTULO */
+    .banner h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* BANNER - PARÁGRAFO */
+    .banner p {
+        font-size: 15px;
+    }
+
+    .contato-info{
+        display: block;
+    }
+
+    .contato-item{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
